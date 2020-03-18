@@ -1,0 +1,206 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 2, 2014, 3:57:36 PM
+    Author     : Administrator
+*/
+.table-normal
+{
+    /*    border-collapse:separate;*/
+    border-collapse: collapse;
+    border-spacing:0px 0px;
+}
+
+.th-normal
+{
+    background-color: #59B300; 
+    font-family: "TimesNewRoman", Times, serif;
+    font-size: 16px;
+}
+
+.th-normal tr th {
+    padding: 7px;    
+    color: #FFFFFF;
+    border: 1px solid #E8E9D3;
+}
+
+.tr-normal 
+{
+    font-family: "TimesNewRoman", Times, serif;
+    font-size: 16px;
+}
+
+.tr-normal tr td {
+    padding: 6px;
+    border: 1px solid #E8E9D3;
+}
+
+tr.tomauHover:nth-child(n):hover
+{
+    background-color: #FFFF66;
+}
+tr.tomauHover:nth-child(2n+1) { background-color: #f2f2f2;}
+tr.tomauHover:nth-child(2n+0) { background-color: #FFFFFF; }
+
+img:hover{
+    background-color:orange;
+}
+
+/*Table paging*/
+.pg-normal {
+    color: #000000;
+    font-size: 15px;
+    cursor: pointer;
+    /*    background: #D0B389;*/
+    padding: 2px 4px 2px 4px;
+}
+
+.pg-selected {
+    color: #fff;
+    font-size: 15px;
+    background: #000000;
+    padding: 2px 4px 2px 4px;
+}
+
+.label {    
+    border-bottom-left-radius: 0.1em;
+    border-bottom-right-radius: 0.1em;
+    border-top-left-radius: 0.1em;
+    border-top-right-radius: 0.1em;
+    display: inline;
+    font-size: 18px;
+    line-height: 1;    
+    padding-right: 1em;
+    padding-left: 1em;    
+    padding-top: 0.12em;
+    padding-bottom: 0.12em;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.label-success {
+    background-color: #048704;    
+    border: 1px solid #048704;
+    color: #FFFFFF;
+}
+
+.label-success:hover {
+    background-color: #065B06;
+    border: 1px solid #065B06;
+    color: #FEF9F4;
+}
+
+.div-normal{
+    font-family: "TimesNewRoman", Times, serif;
+    font-size: 16px
+}
+
+div.dialogclass{
+    z-index:0;
+    width:100%;
+    height:120%;
+    position:absolute;
+    left:0px;
+    top:0px;
+    background-color: rgba(0, 0, 0, 0.25);
+}  
+
+div[aria-hidden='true'] {display: none;}.hidden {display:none;}
+
+/*Định dạng nội dụng nhập liệu*/
+.txtInput {
+    border-style: none;               
+    border-bottom: 1px dashed green;
+/*    border-bottom: 1px solid green*/
+    background: transparent;
+}
+
+.txtEdit {
+    border-style: none;         
+    border-bottom: 1px dashed red;
+/*    border-bottom: 1px solid red;*/
+    background: transparent;
+}
+
+/*Định tiêu đề*/
+.divTitle {
+    margin: 3px 10px 8px 10px;  
+    padding: 5px 5px 10px 5px; 
+    border: none; 
+    border-bottom: 1.3px solid #4E1D74; 
+    background: transparent;    
+}
+
+.mauNenForm {
+    background-color: #001a00; // 10.07.2018
+}
+
+a.boxclose{
+    /*    float: right;
+            width: 23px;
+            height: 23px;
+        width: 20px;
+        height: 20px;
+        background: #EAEAEA;
+            background-color: #C0C0C0;
+        border: 2px solid red;
+            margin-top: -18px;
+            margin-right: -10px;
+        margin-top: -6px;
+        margin-right: -1px;
+        cursor: pointer;
+        color: #BC0000;
+        border-radius: 100%;
+     border-radius: 20%;
+        padding: 4px 2px 1px 2px;
+        padding: auto;
+        font-size: 15px;
+        text-decoration: none;*/
+
+    float: right;
+    width: 16px;
+    height: 16px;
+    background: #EAEAEA;
+    border: 2px solid red;
+    margin-top: -1px;
+    margin-right: 3px;
+    cursor: pointer;
+    color: #BC0000;
+    border-radius: 10%;
+    padding: 1px 1px 1px 1px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+btn {    
+    border-bottom-left-radius: 0.1em;
+    border-bottom-right-radius: 0.1em;
+    border-top-left-radius: 0.1em;
+    border-top-right-radius: 0.1em;
+    display: inline;
+    font-size: 18px;
+    line-height: 1;    
+    padding-right: 1em;
+    padding-left: 1em;    
+    padding-top: 0.12em;
+    padding-bottom: 0.12em;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+btn-success {
+    background-color: #048704;    
+    border: 1px solid #048704;
+    color: #FFFFFF;
+}
+
+btn-success:hover {
+    background-color: #065B06;
+    border: 1px solid #065B06;
+    color: #FEF9F4;
+}

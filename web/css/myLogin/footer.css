@@ -1,0 +1,119 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 10, 2014, 3:55:59 PM
+    Author     : dcthang
+*/
+
+.footer_layout {
+    margin-top: 20px;
+    width: 100%;
+}
+.footer {
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 900px;
+}
+.footer_content1 {
+    float: left;
+    margin-top: 10px;
+    width: 400px;
+}
+.footer_logo {
+    margin-right: 10px;
+}
+.footer_text {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer_add {
+    color: #67090D;
+    font-size: 12px;
+    margin-top: 12px;
+}
+.footer_phone {
+    color: #00aff0;
+    float: left;
+    font-size: 12px;
+}
+.footer_text_CSKH {
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer_content2 {
+    float: left;
+    margin-top: 10px;
+    padding-left: 35px;
+    width: 290px;
+}
+.footer_lien_ket {
+    color: #575757;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-top: 12px;
+}
+.footer_content3 {
+    float: right;
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 300px;
+}
+.footer_logo_social {
+    float: left;
+}
+.footer_copyright {
+    color: #67090D;
+    font-family: Arial;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.footer_menu {
+    color: #575757;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+.footer_txt_sdt {
+    float: left;
+    height: 35px;
+    margin-right: 10px;
+    padding-left: 10px;
+    width: 150px;
+}
+.footer_btn_gui {
+    background-color: #930504;
+    border: 2px solid #930504;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: bold;
+    height: 35px;
+    padding: 0 20px;
+}
+.footer_btn_gui:hover {
+    background-color: #680102;
+    border: 2px solid #680102;
+}
+.footer_facebook {
+    float: left;
+    margin-right: 10px;
+}
+.footer_tweet {
+    float: left;
+    margin-right: 10px;
+}
+.footer_youtube {
+    float: left;
+    margin-right: 10px;
+}
+.footer_social {
+    clear: both;
+    width: 100%;
+}

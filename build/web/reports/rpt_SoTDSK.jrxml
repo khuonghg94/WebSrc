@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="571" leftMargin="12" rightMargin="12" topMargin="12" bottomMargin="12" uuid="9cdd1421-8ae4-45cc-b84e-a652d7c5670a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Heading 1" fontSize="16" isBold="true"/>
+	<style name="Heading 3" fontSize="14" isBold="true"/>
+	<parameter name="HoTenNVLap" class="java.lang.String"/>
+	<parameter name="tenLopHS" class="java.lang.String"/>
+	<parameter name="diaChiHS" class="java.lang.String"/>
+	<parameter name="MaSoNVLap" class="java.lang.String"/>
+	<parameter name="gioiTinhHS" class="java.lang.String"/>
+	<parameter name="hoTenHS" class="java.lang.String"/>
+	<parameter name="ngaySinhHS" class="java.lang.String"/>
+	<parameter name="ngayKham" class="java.lang.String"/>
+	<parameter name="HoTenNVKetLuan" class="java.lang.String"/>
+	<parameter name="MaSoNVKL" class="java.lang.String"/>
+	<parameter name="maSoTDSK" class="java.lang.Integer">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="canNang" class="java.lang.String"/>
+	<parameter name="chieuCao" class="java.lang.String"/>
+	<parameter name="ketLuanChung" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["D:\\PhanMem_VTT\\QuanLyKidSchools\\web\\reports\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[ select * from "ChiTietKham_TheoIDSSK_TABLE"($P{maSoTDSK});]]>
+	</queryString>
+	<field name="TenBoPhan" class="java.lang.String"/>
+	<field name="KetLuan" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="364" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="186" width="555" height="37" uuid="f7ecd14f-c1b3-4170-b33f-cf3efe11ee1c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="24" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[THÔNG TIN HỌC SINH]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="132" width="308" height="27" uuid="5f1749a6-468f-47b0-b927-e23ec2b012ad"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Người lập: <b>" + $P{HoTenNVLap} + "</b>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="308" y="132" width="247" height="27" uuid="b459eed4-f627-4b65-b54c-e2b9879d7be3"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Mã số: <b>" + $P{MaSoNVLap} + "</b>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="159" width="308" height="27" uuid="a5278e9e-6ced-4f49-8106-49bf1215bc88"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Bác sỹ kết luận: <b>" + $P{HoTenNVKetLuan} + "</b>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="223" width="308" height="27" uuid="2fa45238-42ea-42a4-a5f1-24d7618fbc08"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Họ và tên: <b>" + $P{hoTenHS} + "</b>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="308" y="223" width="247" height="27" uuid="631a08f5-8aaa-438a-bb21-19053e56d055"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Giới tính: <b>" + $P{gioiTinhHS} + "</b>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="250" width="308" height="27" uuid="7429a7a8-0bf5-47ad-a4d0-043df47b8a09"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Ngày sinh: <b>" + $P{ngaySinhHS} + "</b>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="308" y="250" width="247" height="27" uuid="ddc73aeb-1c00-4533-92d2-df65650ca2a8"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Địa chỉ: <b>" + $P{diaChiHS} + "</b>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="277" width="555" height="27" uuid="9f334927-b9a9-4019-9196-8f6dca1b12c9"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Tên lớp: <b>" + $P{tenLopHS} + "</b>"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="304" width="555" height="37" uuid="71a4d2cc-60b4-4012-b16c-a57381d0dfe4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="24" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[THÔNG TIN KHÁM SỨC KHỎE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="60" uuid="75e455de-5c56-46c6-bca3-375787e250df"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="28" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[SỔ THEO DÕI SỨC KHỎE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="105" width="555" height="27" uuid="b84e526c-5c0f-4113-8c32-c6490545fffb"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Ngày khám: <b>" + $P{ngayKham} + "</b>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="308" y="159" width="247" height="27" uuid="84e0f85c-46d0-4ec7-95a9-32ca8086cd61"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Mã số: <b>" + $P{MaSoNVKL} + "</b>"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="60" width="555" height="26" uuid="62c63062-24df-4a92-abb7-8f119d65fa9d"/>
+				<textElement textAlignment="Center" markup="html">
+					<font fontName="Times New Roman" size="14" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Mã sổ: <b>" + $P{maSoTDSK} + "</b>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="341" width="283" height="23" uuid="7788ad05-b14b-4c89-9ecd-88c87b2c273b"/>
+				<textElement markup="html">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Cân nặng: <b>" + $P{canNang} + "</b> (ký)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="283" y="341" width="272" height="23" uuid="9fe1acb4-3e87-49af-9ea0-e17825f059b2"/>
+				<textElement markup="html">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Chiều cao: <b>" + $P{chieuCao} + "</b> (m)"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="37">
+			<staticText>
+				<reportElement x="69" y="1" width="299" height="36" uuid="147bab7b-2e69-492e-a9e4-23fbf7ff9ef9"/>
+				<box>
+					<topPen lineWidth="2.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Nội dung khám]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="368" y="1" width="187" height="36" uuid="3fc1aafb-a826-4c4b-9714-e02ba6f24845"/>
+				<box>
+					<topPen lineWidth="2.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Kết luận]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="1" width="69" height="36" uuid="5e580943-9d92-4bcc-96f7-8deba1bf36d5"/>
+				<box>
+					<topPen lineWidth="2.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[STT]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="36">
+			<textField>
+				<reportElement x="69" y="0" width="299" height="34" uuid="343c65e3-48f4-4a37-b697-70925b290252"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TenBoPhan}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MM/dd/yyyy">
+				<reportElement x="368" y="0" width="187" height="34" uuid="5ef7d433-e376-4adb-942f-4f4ec7ea1d9e"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{KetLuan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="-1" width="69" height="35" uuid="7227416a-7f20-4b56-94f4-0b080653b498"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="50">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="32" uuid="f841c2f0-8c66-4667-9142-470753a1e89d"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Kết luận của bác sỹ: <b>" + $P{ketLuanChung} + "</b>"]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

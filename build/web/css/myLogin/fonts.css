@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 12, 2014, 4:05:19 PM
+    Author     : dcthang
+*/
+
+@charset "ISO-8859-1";
+body {
+    font-family: Arial,Helvetica,serif;
+    font-size: 13px;
+}
+h1 {
+    color: #48802c;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+}
+h2 {
+    color: #48802c;
+    font-size: 16px;
+}
+a:hover {
+    color: #48802c;
+}

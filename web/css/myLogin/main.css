@@ -1,0 +1,243 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 12, 2014, 4:02:46 PM
+    Author     : dcthang
+*/
+
+html * {
+    margin: 0;
+}
+.spinner {
+    padding: 5px;
+    position: absolute;
+    right: 0;
+}
+.message {
+    border: 1px solid #b2d1ff;
+    color: #006dba;
+    font-size: 7pt;
+    margin: 10px 0 5px;
+    padding: 5px 5px 5px 30px;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    display: inline-block;
+}
+html[xmlns] .clearfix {
+    display: block;
+}
+* html .clearfix {
+    height: 1%;
+}
+.imgLogo {
+    height: 69.968px;
+    width: 275px;
+}
+.imgavatar {
+    height: 45px;
+}
+.shadowfordiv {
+    box-shadow: 1px 1px 1px #d4d4d4;
+}
+.ul1 > li > a:focus {
+    border-left: 3px solid #930504;
+}
+.borderforlimenu1 {
+    border-bottom: 2px solid rgb(229, 229, 229);
+    border-top: 2px solid rgb(229, 229, 229);
+}
+.borderforlimenu2 {
+    border-bottom: 2px solid rgb(229, 229, 229);
+}
+
+.borderforlimenu3 {
+    border-bottom: 2px solid #DCA;
+}
+.bannerimg {
+    width: 100%;
+}
+.testdiv {
+    background-color: rgb(238, 238, 238);
+    float: left;
+    height: 100%;
+    width: 20.5%;
+}
+.fontheader {
+    font-family: "Arial";
+    font-size: 17pt;
+}
+.fontsizemoney {
+    color: #930504;
+    font-size: 17pt;
+}
+.fontformenumain {
+    font-size: 10pt;
+}
+.div_in_gFrom {
+    padding-left: 25px;
+}
+.buttonborder_backgroundcolor {
+    background-color: #930504;
+    border: 2px solid #930504;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    height: 45px;
+    padding: 10px 20px;
+    width: 110px;
+}
+.buttonborder_backgroundcolorH {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: black;
+    font-weight: bold;
+    height: 45px;
+    padding: 10px 20px;
+    width: 110px;
+}
+.buttonborder {
+    background-color: white;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px #d4d4d4;
+}
+.navheader {
+    border: 0 none;
+    margin-left: 10px;
+    margin-top: 18px;
+}
+button {
+    padding: 0;
+}
+.activeformenumain > li.active > a {
+    color: #930504;
+}
+.activeformenumain > li.active {
+    border-left: 3px solid #930504;
+}
+.activeforsubmenu > li.active > a {
+    color: #930504;
+}
+.colorforstatusSuccessletter {
+    color: rgb(97, 138, 0);
+}
+.colorforstatusFailletter {
+    color: rgb(228, 28, 48);
+}
+.imagebackground {
+    background-image: url("../..//image/corner.png");
+    background-position: right 0 top;
+    background-repeat: no-repeat;
+    background-size: 12px auto;
+}
+.fontforhelp {
+    font-size: 15px;
+    font-weight: bold;
+}
+#backgroundPopup {
+    background: none repeat scroll 0 0 #000000;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+#toPopup {
+    background: none repeat scroll 0 0 #ffffff;
+    border: 10px solid #ccc;
+    border-radius: 3px;
+    color: #333333;
+    display: none;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 14px;
+    left: 50%;
+    margin-left: -402px;
+    position: fixed;
+    top: 5%;
+    width: 830px;
+    z-index: 2;
+}
+div.loader {
+    background: url("../images/loading.gif") no-repeat scroll 0 0 transparent;
+    display: none;
+    height: 32px;
+    left: 50%;
+    margin-left: -10px;
+    position: absolute;
+    top: 40%;
+    width: 32px;
+    z-index: 9999;
+}
+div.close {
+    background: url("../images/lose.png") no-repeat scroll 0 0 transparent;
+    bottom: 24px;
+    cursor: pointer;
+    float: right;
+    height: 30px;
+    left: 27px;
+    position: relative;
+    width: 50px;
+}
+span.img_tooltip {
+    background: none repeat scroll 0 0 #000000;
+    border-radius: 2px;
+    color: #ffffff;
+    display: none;
+    font-size: 10px;
+    height: 20px;
+    margin-top: 45px;
+    min-width: 105px;
+    opacity: 0.7;
+    padding: 4px 0 0;
+    position: absolute !important;
+    text-align: center;
+    width: 105px;
+}
+span.arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid #000000;
+    display: block;
+    height: 1px;
+    left: 40px;
+    position: relative;
+    top: 3px;
+    width: 1px;
+}
+div#popup_content {
+    height: 500px;
+    margin: 4px 7px;
+    overflow-y: scroll;
+}
+.close_popup {
+    background: url("../images/close.png") no-repeat scroll 0 0 / 25px 25px transparent;
+    cursor: pointer;
+    height: 45px;
+    margin-right: -40px;
+    margin-top: -23px;
+    position: absolute;
+    right: 0;
+    width: 45px;
+    z-index: 9999;
+}
+.active_bank_link {
+    border: 1px solid #930504;
+}
+.moneym {
+    font-size: 8pt;
+}
+

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="repDeNghiThuTien" language="groovy" pageWidth="595" pageHeight="421" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="567" leftMargin="14" rightMargin="14" topMargin="13" bottomMargin="0" uuid="8cb8a9c0-6754-42b3-9c67-d7928fa06e3a">
+	<property name="ireport.zoom" value="1.948717100000037"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="hoTen" class="java.lang.String"/>
+	<parameter name="diaChi" class="java.lang.String"/>
+	<parameter name="gioiTinh" class="java.lang.String"/>
+	<parameter name="ngayDeNghi" class="java.lang.String"/>
+	<parameter name="realPathLogo" class="java.lang.String"/>
+	<parameter name="msHS" class="java.lang.String"/>
+	<parameter name="tenLop" class="java.lang.String"/>
+	<parameter name="ndThuTien" class="java.lang.String"/>
+	<parameter name="tienSo" class="java.lang.String"/>
+	<parameter name="tienChu" class="java.lang.String"/>
+	<parameter name="ngaySinh" class="java.lang.String"/>
+	<parameter name="ngayNopTien" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<title>
+		<band height="375">
+			<staticText>
+				<reportElement x="0" y="43" width="567" height="17" uuid="cac8e010-115c-4907-b3b9-c71502ae68b2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[ĐỀ NGHỊ THU TIỀN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="471" y="11" width="96" height="15" uuid="9d14ff4c-aa65-485e-8c8a-626e3abd82fd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="8" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Số:       <b> /08/KHTC</b>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="471" y="0" width="96" height="11" uuid="32b7190c-5ff7-44b0-824e-95f81fffd791"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="7" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Mẫu số: 01/ĐT-VTT
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="0" width="148" height="14" uuid="3fe0d31a-078f-4fa6-a8b7-aa847cca2ea8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="VNI-Revue" size="7" isBold="true" pdfFontName="Helvetica" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[TRÖÔØNG ÑAÏI HOÏC VOÕ TRÖÔØNG TOAÛN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="14" width="148" height="15" uuid="5efd5798-8f67-47c0-bc3e-add7c165c087"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PHÒNG KẾ HOẠCH TÀI CHÍNH]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="10" y="135" width="340" height="15" uuid="a5f03d18-0ef6-4dd2-a839-0b014c0f57a8"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Đề nghị Quý Ngân Hàng thu tiền của: <b>" + $P{hoTen} + "</b>"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="73" width="567" height="13" uuid="f0ca6032-d3db-47ae-82f2-677024f3893f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[(Liên: 1)]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="60" width="567" height="13" uuid="b723a6ce-cace-4280-88ac-061470138edc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ngayDeNghi}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="86" width="567" height="18" uuid="8103f6ee-23c6-450a-b4be-5d5b0b0bd5fb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="9" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Kính gửi: VIETCOMBANK-CN CẦN THƠ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="105" width="210" height="15" uuid="187b30e0-5979-4d70-a5b9-2eaea59209df"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="8" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Họ tên người đề nghị: <b>NGUYỄN THỊ HUỲNH NHƯ</b>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="441" y="105" width="113" height="15" uuid="5d491ff8-f285-4773-b4c1-23d767e605ce"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="8" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Đơn vị: <b>Phòng KHTC</b>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="120" width="210" height="15" uuid="2566b239-c6a7-4f5c-b268-958d9f7b06d2"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="8" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Địa chỉ: <b>Trường Đại Học Võ Trường Toản</b>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="441" y="120" width="113" height="15" uuid="bec0f4a3-ef99-403a-b4dc-e7b500078f2a"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="8" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[MST: <b>6300049127</b>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="298" width="99" height="12" uuid="9295b25e-d0bb-4cef-9372-35e67fdec9e5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[(Ký, họ tên, đóng dấu)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="155" y="298" width="99" height="12" uuid="9f1cb8df-6b92-4666-91c5-b3590c12b628"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[(Ký, họ tên)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="285" width="99" height="13" uuid="064d4cf9-2243-4e68-bf04-e81d1599e9bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Thủ trưởng đơn vị]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="155" y="285" width="99" height="13" uuid="2750b925-0de1-4eec-8291-347d5de44996"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Kế toán trưởng]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="10" y="150" width="340" height="15" uuid="34f6ab48-a785-4d1e-822a-93fc3cebbe91"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Địa chỉ: <b>" + $P{diaChi} + "</b>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="165" width="210" height="15" uuid="013f5633-d771-494a-96e6-726282a91321"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["MSSV: <b>" + $P{msHS} + "</b>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="165" width="217" height="15" uuid="162d1b2a-2638-4adc-b1ce-653b43108ca9"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Lớp: <b>" + $P{tenLop} + "</b>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="441" y="135" width="113" height="15" uuid="25460aa8-47a9-4688-ad9f-36244237c9f9"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Ngày sinh: <b>" + $P{ngaySinh} + "</b>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="180" width="544" height="15" uuid="a1b1c174-5b76-4ded-bc87-d9f93487967f"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Nội dung thu: <b>" + $P{ndThuTien} + "</b>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="195" width="544" height="15" uuid="a8c8b1e3-ec51-4d7e-8b8b-451eedec0dd7"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Số tiền: <b>" + $P{tienSo} + "</b>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="210" width="544" height="15" uuid="f003a24f-f3f9-45c6-b0c2-c9e0a2043b00"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<i>Bằng chữ <b>" + $P{tienChu} + "</b></i>"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="225" width="544" height="15" uuid="a7bc6c87-60bc-4f75-b5d1-2cb71b6dca99"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="9" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Đơn vị thụ hưởng: <b>TRƯỜNG ĐẠI HỌC VÕ TRƯỜNG TOẢN</b>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="240" width="210" height="15" uuid="6257f796-ba7a-4670-b86b-00c0cd900474"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="8" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[TK số: <b>0111.000.303.266</b>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="240" width="334" height="15" uuid="d7c1889f-1231-4d22-b913-945fca2e5e09"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman" size="8" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Tại: <b>Vietcombank -  CN Cần thơ</b>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="255" width="544" height="15" uuid="bae2e11d-30c8-4192-bb7b-b45c21a916c0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Kèm theo(nếu có): 380/ĐN-TCHC, ngày 04/08/2018 làm chứng từ gốc]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="285" width="99" height="13" uuid="9c6803d8-b42a-4ca2-b0b6-b191bcb5c4dc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Người đề nghị]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="298" width="99" height="12" uuid="83828498-d60d-4291-b5fc-2d38690d9cef"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[(Ký, họ tên)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="285" width="108" height="13" uuid="dc221bc4-5316-457a-b9a4-6b9a1fd7f54f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Người nộp tiền]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="298" width="108" height="12" uuid="b0816425-a258-4994-9256-8781f6fca5e7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[(Ký, họ tên)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="155" y="355" width="99" height="13" uuid="12836db0-3d46-4ca8-aea2-9b063686ea41"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Phan Thị Bích Trăm]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="355" width="99" height="13" uuid="fae4504c-c0c1-4f5b-b32f-e74ba4324f48"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Nguyễn Thị Huỳnh Như]]></text>
+			</staticText>
+			<image scaleImage="FillFrame" vAlign="Top" isUsingCache="false">
+				<reportElement x="9" y="0" width="30" height="29" uuid="94f9db4c-8764-4a45-a0a9-4aa1746ffca3"/>
+				<imageExpression><![CDATA[$P{realPathLogo}+"//logoVTT.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="441" y="165" width="38" height="15" uuid="3d6fa5af-3c6a-4f1a-9051-4d030dd74228"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Khóa:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="415" y="271" width="139" height="13" uuid="28998da2-293c-4a64-933e-7b7cfb243202"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ngayNopTien}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>
